@@ -1,0 +1,21 @@
+{
+  "name": "mcm-planner",
+  "version": "1.0.0",
+  "description": "矩阵链乘法括号规划与标量代价解释后端（API + CLI）",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"dist/test/*.test.js\"",
+    "start": "node dist/src/cli.js serve",
+    "cli": "node dist/src/cli.js",
+    "demo": "node dist/src/cli.js demo"
+  },
+  "bin": {
+    "mcm": "dist/src/cli.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "@types/node": "^22.0.0"
+  }
+}
