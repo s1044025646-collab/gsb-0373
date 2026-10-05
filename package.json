@@ -1,0 +1,25 @@
+{
+  "name": "matrix-chain-planner",
+  "version": "1.0.0",
+  "description": "矩阵链乘法括号规划与标量代价解释后端（TypeScript + Node.js + SQLite）",
+  "type": "module",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "bin": {
+    "mcp": "dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server/index.js",
+    "dev": "tsx src/server/index.ts",
+    "cli": "tsx src/cli/index.ts",
+    "demo": "tsx src/cli/index.ts demo",
+    "test": "node --test --import tsx test"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.0"
+  }
+}
